@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int k = int.Parse(Console.ReadLine());
+            int m = 0;
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int den = 0;
+
+            while(k > m)
+            {
+                den++;
+                k = k + a;
+                m = m + b;
+                if(m > k)
+                {
+                    Console.WriteLine("NE");
+                }
+            }
+            Console.WriteLine(den);
+
+        }
+    }
+}
